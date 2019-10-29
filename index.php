@@ -6,6 +6,6 @@
   </head>
   <body>
     <h1><b>Nerijus</b>- HTML<?php print 'ir PHP'?> asas !</h1>
-    <p>Moku kurti statinį turinį.<br>Atidaryta:<?php print date("Y.m.d H:i:s")?></p>
+    <p>Moku kurti statinį turinį.<br>Atidaryta:<?php print date('Y.m.d H:i:s')?></p>
   </body>
 </html>
