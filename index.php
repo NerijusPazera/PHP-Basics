@@ -8,6 +8,6 @@
         <h1>Dainu tekstai</h1>
         <h2>Paragrafo Daina</h2>
         <p>Aš toks vienišas, jaunas paragrafas...</p>
-        <p>Mindau svetimo kodo gatves...</p>
+        <!--<p>Mindau svetimo kodo gatves...</p>-->
     <body>
 </html>
