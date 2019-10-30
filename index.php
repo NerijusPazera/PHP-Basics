@@ -4,31 +4,23 @@
         <meta charset="utf-8">
         <title>PHP</title>
         <style>
-            .dice-1 {
-                background-image: url("https://cdn2.iconfinder.com/data/icons/dice-roll/100/dice_black_1-512.png");
+            body {
+                display:flex;
+                flex-direction:column;
+                align-items:center;
             }
-            .dice-2 {
-                background-image: url("https://cdn2.iconfinder.com/data/icons/dice-roll/100/dice_black_2-512.png");
-            }
-            .dice-3 {
-                background-image: url("https://cdn2.iconfinder.com/data/icons/dice-roll/100/dice_black_3-512.png");
-            }
-            .dice-4 {
-                background-image: url("https://cdn2.iconfinder.com/data/icons/dice-roll/100/dice_black_4-512.png");
-            }
-            .dice-5 {
-                background-image: url("https://cdn2.iconfinder.com/data/icons/dice-roll/100/dice_black_5-512.png");
-            }
-            .dice-6 {
-                background-image: url("https://cdn2.iconfinder.com/data/icons/dice-roll/100/dice_black_6-512.png");
-            }
-            .dim {
-                height: 512px;
-                width: 512px;
+            .bomb {
+                height: <?php print date('s'); ?>vh;
+                width: <?php print date('s'); ?>vw;
+                background-image: url("https://files.gamebanana.com/img/ico/sprays/4ea33068c0dcc.png");
+                background-size: contain;
+                background-repeat: no-repeat;
+                background-position: center;
             }
         </style>
     </head>
     <body>
-        <div class="dim dice-<?php print rand(1,6);?>"></div>
+        <div class="bomb"></div>
+        <div class="sec"><?php print date('s'); ?></div>
     </body>
 </html>
