@@ -4,24 +4,31 @@
         <meta charset="utf-8">
         <title>PHP</title>
         <style>
-            body {
-                background-color: rgb(<?php print rand(0, 255) ?>,<?php print rand(0, 255) ?>,<?php print rand(0, 255) ?>);
+            .dice1 {
+                background-image: url("https://cdn2.iconfinder.com/data/icons/dice-roll/100/dice_black_1-512.png");
             }
-            h1 {
-                font-size: <?php print rand(16, 30) ?>px;
+            .dice2 {
+                background-image: url("https://cdn2.iconfinder.com/data/icons/dice-roll/100/dice_black_2-512.png");
             }
-            p {
-                color: rgb(<?php print rand(0, 255) ?>,<?php print rand(0, 255) ?>,<?php print rand(0, 255) ?>);
+            .dice3 {
+                background-image: url("https://cdn2.iconfinder.com/data/icons/dice-roll/100/dice_black_3-512.png");
+            }
+            .dice4 {
+                background-image: url("https://cdn2.iconfinder.com/data/icons/dice-roll/100/dice_black_4-512.png");
+            }
+            .dice5 {
+                background-image: url("https://cdn2.iconfinder.com/data/icons/dice-roll/100/dice_black_5-512.png");
+            }
+            .dice6 {
+                background-image: url("https://cdn2.iconfinder.com/data/icons/dice-roll/100/dice_black_6-512.png");
+            }
+            .dim {
+                height: 512px;
+                width: 512px;
             }
         </style>
     </head>
     <body>
-        <h1>
-            Aš keičiu savo dydi!
-        </h1>
-
-        <p>
-            Aš keičiu savo spalvą!
-        </p>
-    <body>
+        <div class="dim dice<?php print rand(1,6);?>"></div>
+    </body>
 </html>
