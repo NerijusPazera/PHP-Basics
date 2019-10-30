@@ -4,22 +4,22 @@
         <meta charset="utf-8">
         <title>PHP</title>
         <style>
-            .dice1 {
+            .dice-1 {
                 background-image: url("https://cdn2.iconfinder.com/data/icons/dice-roll/100/dice_black_1-512.png");
             }
-            .dice2 {
+            .dice-2 {
                 background-image: url("https://cdn2.iconfinder.com/data/icons/dice-roll/100/dice_black_2-512.png");
             }
-            .dice3 {
+            .dice-3 {
                 background-image: url("https://cdn2.iconfinder.com/data/icons/dice-roll/100/dice_black_3-512.png");
             }
-            .dice4 {
+            .dice-4 {
                 background-image: url("https://cdn2.iconfinder.com/data/icons/dice-roll/100/dice_black_4-512.png");
             }
-            .dice5 {
+            .dice-5 {
                 background-image: url("https://cdn2.iconfinder.com/data/icons/dice-roll/100/dice_black_5-512.png");
             }
-            .dice6 {
+            .dice-6 {
                 background-image: url("https://cdn2.iconfinder.com/data/icons/dice-roll/100/dice_black_6-512.png");
             }
             .dim {
@@ -29,6 +29,6 @@
         </style>
     </head>
     <body>
-        <div class="dim dice<?php print rand(1,6);?>"></div>
+        <div class="dim dice-<?php print rand(1,6);?>"></div>
     </body>
 </html>
