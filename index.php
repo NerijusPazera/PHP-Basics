@@ -1,21 +1,21 @@
 <?php
-$sudas1 = rand(1, 100);
-$sudas2 = rand(101, 200);
-$sudas3 = rand(201, 300);
-$sudas4 = rand(301, 400);
+$bin_vol = 40;
+$bin_heap_vol = rand(1, 10);
+$trash_per_day = 15;
+$h1 = 'Siuksliu prognoze';
+$p_turima = "Turima siuksline - $bin_vol litru";
+$p_nepyksta = "Zmona nieko nesako, kol kaupas nevirsyja $bin_heap_vol litru";
+$days = floor(($bin_vol + $bin_heap_vol) / $trash_per_day);
+$h3 = "Isvada: Nieko nedarysiu $days dienas";
 ?>
-<!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html>
     <head>
-        <meta charset="utf-8">
-        <title>PHP</title>
+        <title>Siuksles</title>
     </head>
     <body>
-        <div>
-            <h1>Skolos skaiciuokle</h1>
-            <h3>Jei paemei <?php print $sudas1; ?> jievru</h3>
-            <h3>Su dviem kabanciais grazinsi <?php print $sudas3; ?></h3>
-            <h3>Su vienu kabanciu grazinsi <?php print $sudas2; ?></h3>
-        </div>
+        <h1><?php print $h1; ?></h1>
+        <p><?php print $p_turima; ?></p>
+        <p><?php print $p_nepyksta; ?></p>
+        <h3><?php print $h3; ?></h3>
     </body>
 </html>
