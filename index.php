@@ -1,21 +1,16 @@
 <?php
-$string = 'Zdarova !';
-$int = 123;
-$bool = true;
-$null = null;
+$img_src = 'http://uberhumor.com/wp-content/uploads/2019/03/pp1bbf97fnn21.jpg';
 ?>
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
     <head>
         <meta charset="utf-8">
-        <title>PHP</title>
+        <title>PHI IMG</title>
     </head>
     <body>
-        <ul>
-            <li>String Tipas: <?php print $string; ?></li>
-            <li>Integer Tipas: <?php print $int; ?></li>
-            <li>Boolean Tipas: <?php print $bool; ?></li>
-            <li>Null Tipas: <?php print $null; ?></li>
-        </ul>
+        <img src="<?php print $img_src; ?>">
+        <img src="<?php print $img_src; ?>">
+        <img src="<?php print $img_src; ?>">
+        <img src="<?php print $img_src; ?>">
     </body>
 </html>
