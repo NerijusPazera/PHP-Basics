@@ -1,16 +1,21 @@
 <?php
-$img_src = 'http://uberhumor.com/wp-content/uploads/2019/03/pp1bbf97fnn21.jpg';
+$sudas1 = rand(1, 100);
+$sudas2 = rand(101, 200);
+$sudas3 = rand(201, 300);
+$sudas4 = rand(301, 400);
 ?>
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
     <head>
         <meta charset="utf-8">
-        <title>PHI IMG</title>
+        <title>PHP</title>
     </head>
     <body>
-        <img src="<?php print $img_src; ?>">
-        <img src="<?php print $img_src; ?>">
-        <img src="<?php print $img_src; ?>">
-        <img src="<?php print $img_src; ?>">
+        <div>
+            <h1>Skolos skaiciuokle</h1>
+            <h3>Jei paemei <?php print $sudas1; ?> jievru</h3>
+            <h3>Su dviem kabanciais grazinsi <?php print $sudas3; ?></h3>
+            <h3>Su vienu kabanciu grazinsi <?php print $sudas2; ?></h3>
+        </div>
     </body>
 </html>
