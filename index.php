@@ -14,16 +14,16 @@ if ($price_trip > $my_money) {
 }
 
 $h1 = 'Keliones skaiciuokle';
-$li_1 = "Nuvaziuota distancija: $distance";
+$li_1 = "Nuvaziuota distancija: $distance km";
 $li_2 = "Sunaudota: $fuel_total l. kuro";
-$li_3 = "Kaina: $price_trip pinigu";
-$li_4 = "Turimi pinigai $my_money";
+$li_3 = "Kaina: $price_trip €";
+$li_4 = "Turimi pinigai $my_money €";
 $p = "Isvada: Kelione $isvada";
 
 ?>
 <html>
     <head>
-        <title>Kuras</title>
+        <title><?php print $h1; ?></title>
     </head>
     <body>
         <ul>
