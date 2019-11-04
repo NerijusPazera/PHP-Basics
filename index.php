@@ -9,7 +9,7 @@ if (date('s') % 2) {
 ?>
 <html>
     <head>
-        <title></title>
+        <title>Laikas</title>
         <style>
             .lyginis {
                 height: 50vh;
@@ -25,13 +25,13 @@ if (date('s') % 2) {
             .laikas {
                 display: flex;
                 justify-content: center;
-                align-content: center;
+                align-items: center;
             }
         </style>
     </head>
     <body>
-        <div class="<?php print $class; ?>">
-            <div class="laikas"><?php print date('H:i:s'); ?></div>
+        <div class="laikas <?php print $class; ?>">
+            <div><?php print date('H:i:s'); ?></div>
         </div>
     </body>
 </html>
