@@ -2,7 +2,7 @@
 
 if (date('s') % 2) {
     $class = 'lyginis';
-}   else {
+} else {
     $class = 'nelyginis';
 }
 
@@ -12,17 +12,15 @@ if (date('s') % 2) {
         <title>Laikas</title>
         <style>
             .lyginis {
-                height: 50vh;
-                width: 40vw;
                 border: solid;
             }
             .nelyginis {
-                height: 50vh;
-                width: 40vw;
                 border: solid;
                 border-radius: 50%;
             }
             .laikas {
+                height: 50vh;
+                width: 40vw;
                 display: flex;
                 justify-content: center;
                 align-items: center;
