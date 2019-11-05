@@ -1,35 +1,31 @@
 <?php
+$kates = rand(1, 3);
+$sunys = rand(1, 3);
+$katasuniai = 0;
 
-if (date('s') % 2) {
-    $class = 'lyginis';
-} else {
-    $class = 'nelyginis';
+for ($x = 0; $x < $kates; $x++) {
+    for ($y = 0; $y < $sunys; $y++) {
+        $pavyko = rand(0, 1);
+        if ($pavyko) {
+            $katasuniai++;
+            break;
+        }
+    }
 }
 
+$h1 = 'Katašunių Išeiga';
+$h2 = "Dalyvavo $kates katės ir $sunys šunys";
+$h3 = "Katašunių išeiga : $katasuniai";
 ?>
-<html>
+
+<html lang="en" dir="ltr">
     <head>
-        <title>Laikas</title>
-        <style>
-            .lyginis {
-                border: solid;
-            }
-            .nelyginis {
-                border: solid;
-                border-radius: 50%;
-            }
-            .laikas {
-                height: 50vh;
-                width: 40vw;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-            }
-        </style>
+        <meta charset="utf-8">
+        <title><?php print $h1; ?></title>
     </head>
     <body>
-        <div class="laikas <?php print $class; ?>">
-            <div><?php print date('H:i:s'); ?></div>
-        </div>
+        <h1><?php print $h1; ?></h1>
+        <h2><?php print $h2; ?></h2>
+        <h3><?php print $h3; ?></h3>
     </body>
-</html>
+</htm
