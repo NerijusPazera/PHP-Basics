@@ -1,35 +1,28 @@
-<?php
-$days = 365;
-$pack_price = 3.50;
-$count_ttl = 0;
-$time_per_cig = 5;
+<?php 
 
-for ($d = 0; $d < $days; $d++) {
-    $weekday = date('N', strtotime("+$d day"));
+$speed_of_sound = 333;
+$max_db = 120;
+$db_decr = 6;
+$db = 120;
+$p = '';
 
-    if ($weekday == 6) {
-        $cigs_sat = rand(10, 20);
-        $count_ttl += $cigs_sat;
-    } elseif ($weekday == 7) {
-        $cigs_sun = rand(1, 3);
-        $count_ttl += $cigs_sun;
-    } else {
-        $cigs_mon_fri = rand(3, 4);
-        $count_ttl += $cigs_mon_fri;
-    }
+for ($dist = 1; $db > 0; $dist *= 2) {
+    $db -= $db_decr;
+    $sec = round($dist / $speed_of_sound);
+    $p .= "Po $sec s ($dist)m: $db db <br><br>";
 }
 
-$price_ttl = ceil($count_ttl / 20) * $pack_price;
-$time_ttl = round($count_ttl * $time_per_cig / 60);
+$h1 = 'Griaustinio zona';
 
-$h1 = 'Mano dumu skaiciuokle';
-$h2 = "Per $days dienas, surukysiu $count_ttl cigareciu uz $price_ttl eur.";
-$h3 = "Viso traudamas prastovėsiu $time_ttl valandų."
 ?>
-<html>
+
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title><?php print $h1; ?></title>
+    </head>
     <body>
         <h1><?php print $h1; ?></h1>
-        <h2><?php print $h2; ?></h2>
-        <h3><?php print $h3; ?></h3>
+        <p><?php print $p; ?></p>
     </body>
 </html>
