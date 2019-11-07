@@ -1,36 +1,24 @@
 <?php
 
-$array = [
-    [
-        'name' => 'Petras',
-        'surname' => 'Pizdys',
-        'items' => [
-            [
-                'name' => 'Telefonas',
-                'status' => 'Prapistas',
-            ],
+$boulingas = [
+    'takelis_1' => [
+        'busena' => 'Zaisti galima',
+        'kegliai' => [
+            [1],
+            [0, 1],
+            [0, 0, 1],
+            [1, 0, 0, 1],
         ],
     ],
-    [
-        'name' => 'Tomas',
-        'surname' => 'Ablomas',
-        'items' => [
-            [
-                'name' => 'Buljonas',
-                'status' => 'Naudojamas',
-            ],
-        ],
-    ],
-    [
-        'name' => 'Ana',
-        'surname' => 'Shitkova',
-        'items' => [
-            [
-                'name' => 'Rulonas',
-                'status' => 'Pasibaiges',
-            ],
+    'takelis_2' => [
+        'busena' => 'Zaisti negalima, privemta',
+        'kegliai' => [
+            [0],
+            [0, 0],
+            [0, 0, 0],
+            [0, 0, 0, 0],
         ],
     ],
 ];
 
-var_dump($array);
+var_dump($boulingas);
