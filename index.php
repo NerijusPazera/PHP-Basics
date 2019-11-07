@@ -1,24 +1,30 @@
 <?php
 
-$boulingas = [
-    'takelis_1' => [
-        'busena' => 'Zaisti galima',
-        'kegliai' => [
-            [1],
-            [0, 1],
-            [0, 0, 1],
-            [1, 0, 0, 1],
-        ],
+$trasa = [
+    1 => [
+        'kryptis' => 'I desine',
+        'laipsnis' => 85,
     ],
-    'takelis_2' => [
-        'busena' => 'Zaisti negalima, privemta',
-        'kegliai' => [
-            [0],
-            [0, 0],
-            [0, 0, 0],
-            [0, 0, 0, 0],
-        ],
+    2 => [
+        'kryptis' => 'I kaire',
+        'laipsnis' => 15,
+    ],
+    3 => [
+        'kryptis' => 'I desine',
+        'laipsnis' => 180,
+    ],
+    4 => [
+        'kryptis' => 'I kaire',
+        'laipsnis' => 160,
+    ],
+    5 => [
+        'kryptis' => 'I desine',
+        'laipsnis' => 180,
+    ],
+    6 => [
+        'kryptis' => 'I desine',
+        'laipsnis' => 45,
     ],
 ];
 
-var_dump($boulingas);
+var_dump($trasa);
